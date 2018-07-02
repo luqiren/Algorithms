@@ -1,9 +1,11 @@
 package design;
+import java.util.Map;
+import java.util.HashMap;
 
 public class SumOfTwoNum {
     public static void main (String[] args) {
         int[] nums = {5, 11, 7, 2};
-        int[] result = twoSum1(nums, 9);
+        int[] result = twoSum3(nums, 9);
         System.out.println(result[0]);
         System.out.println(result[1]);
     }
@@ -18,6 +20,31 @@ public class SumOfTwoNum {
         }
         throw new IllegalArgumentException("No two sum solution");
     }
-    // 方法二：采用哈希表，哈希表查找时间为O(1)
+    // 方法二：采用两遍哈希表，哈希表查找时间为O(1)
+    public static int[] twoSum2(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) && map.get(complement) != i) {
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 
+    // 方法三：采用一遍哈希表
+    public static int[] twoSum3(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 }
