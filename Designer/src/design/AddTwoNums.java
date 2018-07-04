@@ -12,7 +12,7 @@ public class AddTwoNums {
             result = result.next;
         }
     }
-    public static ListNode constructLink (int[] nums) {
+    private static ListNode constructLink (int[] nums) {
         if (nums == null || nums.length == 0) {
             return null;
         }
