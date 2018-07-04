@@ -44,12 +44,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Link.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Designer/src/design/Link.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TriangleOfYangHui.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Designer/src/design/TriangleOfYangHui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+              <folding>
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#143#144#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,6 +154,7 @@
         <option value="$PROJECT_DIR$/Designer/src/design/ValidParentheses.java" />
         <option value="$PROJECT_DIR$/Designer/src/design/AddTwoNums.java" />
         <option value="$PROJECT_DIR$/Designer/src/design/Link.java" />
+        <option value="$PROJECT_DIR$/Designer/src/design/TriangleOfYangHui.java" />
       </list>
     </option>
   </component>
@@ -431,12 +446,12 @@
       <workItem from="1530501486029" duration="4116000" />
       <workItem from="1530520711213" duration="4876000" />
       <workItem from="1530582315534" duration="3986000" />
-      <workItem from="1530677510208" duration="4975000" />
+      <workItem from="1530677510208" duration="5514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23988000" />
+    <option name="totallyTimeSpent" value="24527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="681" y="236" width="1174" height="783" extended-state="0" />
@@ -451,7 +466,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -790,6 +805,18 @@
         <state relative-caret-position="288">
           <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Designer/src/design/TriangleOfYangHui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
