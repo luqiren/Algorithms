@@ -2,11 +2,11 @@ package design;
 
 public class Link {
     public static void main (String[] args) {
-        int[] num = {2, 4, 3};
-        int[] num2 = {5, 6, 4};
+        int[] num = {1, 2, 3, 4, 5};
+        int[] num2 = {1, 3, 4};
         ListNode l1 = construct(num);
         ListNode l2 = construct(num2);
-        ListNode r = mergeTwoLists(l1, l2);
+        ListNode r = reverseList(l1);
         while (r != null) {
             System.out.println(r.val);
             r = r.next;
@@ -28,28 +28,48 @@ public class Link {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
         ListNode p = l1, q = l2;
-        ListNode result = new ListNode(0);
+        ListNode result;
         if (p.val > q.val) {
-            result.val = q.val;
+            result = new ListNode(q.val);
             q = q.next;
         } else {
-            result.val = p.val;
+            result = new ListNode(p.val);
             p = p.next;
         }
         ListNode curr = result;
         while (p != null && q != null) {
             if (p.val > q.val) {
-                curr.val = q.val;
+                curr.next = new ListNode(q.val);
                 q = q.next;
             } else {
-                curr.val = p.val;
+                curr.next = new ListNode(p.val);
                 p = p.next;
             }
             curr = curr.next;
-
         }
-        if (p != null) curr = p;
-        if (q != null) curr = q;
+        if (p != null) curr.next = p;
+        if (q != null) curr.next = q;
         return result;
+    }
+
+    public static ListNode reverseList(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return head;
+        }
+        ListNode pre = head;
+        ListNode curr = head.next;
+        ListNode next = curr.next;
+        pre.next = null;
+        while(next != null) {
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+            next = next.next;
+        }
+        curr.next = pre;
+        return curr;
     }
 }
