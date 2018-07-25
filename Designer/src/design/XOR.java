@@ -4,7 +4,7 @@ public class XOR {
     public static void main (String[] args) {
         int[] a = {2, 3, 4, 6, 3, 4, 2};
         singleNumber(a);
-        System.out.println(0^-1);
+        System.out.println(2^2);
     }
 
     public static int singleNumber(int[] A) {
